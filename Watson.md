@@ -23,15 +23,19 @@ Productsのページが開きます。
 * IBM Cloudのカラムの中の「起動」ボタンをクリックします。
 
 これでダッシュボードが表示されます。
+
 ![ibm9](img/ibm9.png)
 
 * 左上のハンバーガーメニューを開き、出てきたメニューの「watson」を選択。
+
 ![ibm2](img/ibm2.png)
 
 * 「Watsonで構築ページ」で「チャットボットの作成」の「始めに」ボタンをクリックします。
+
 ![ibm3](img/ibm3.png)
 
 Watson Assistantページが開かれます。
+
 ![ibm4](img/ibm4.png)
 
 サービス名は勝手に名前が付きます。（今回はWatson Assistant-7eとなった）  
@@ -42,6 +46,7 @@ Watson Assistantページが開かれます。
 * 一番下の「作成」ボタンをクリック
 
 Assistant : サービス名のページが開きます。
+
 ![ibm5](img/ibm5.png)
 
 「サービスを開始します」のチュートリアルでまず学習しておきましょう。
@@ -65,15 +70,18 @@ Assistant : サービス名のページが開きます。
 ```
 
 * 「ツールの起動」ボタンをクリック
+
 ![ibm5](img/ibm5.png)
 
 IBM Watson Assistantページが表示されます。
 ここから英語のページになります。
+
 ![ibm6](img/ibm6.png)
 
 * 「Create Workspace」ボタンをクリック
 
 Workspacesページが開きます。
+
 ![ibm7](img/ibm7.png)
 
 ここからは。[「Watson Assistantの概説チュートリアル」](https://console.bluemix.net/docs/services/conversation/getting-started.html#getting-started-tutorial)を参考にして進めます。
@@ -170,6 +178,7 @@ hello 入力と goodbye 入力の両方を認識して応答する、単純な�
 インストール後に有効化して設定。
 
 Username/Passwordを選択して「Username」、「Password」を入力します。この情報はサービスのページに表示される資格情報を使います。
+
 ![ibm5](img/ibm5.png)
 
 Workspace URLは次のアドレスです。  
@@ -177,6 +186,7 @@ Workspace URLは次のアドレスです。
 ```
 https://gateway.watsonplatform.net/assistant/api/v1/workspaces/[ここはWorkspace ID]/message/
 ```
+
 ![ibm10](img/ibm10.png)
 
 入力を間違うと保存できません。
