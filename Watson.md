@@ -1,4 +1,8 @@
 # WatsonでBot作成
+## チャットボットの活用方法
+出来上がったチャットボットはこちらで簡単に活用できそうです。
+
+[WordpressにIBM Watsonのチャットボット機能を実装してみた](https://qiita.com/asasaki/items/18a7535b759de86841ea)
 ## 準備
 
 ダッシュボードにアクセスするには以下アドレス。
@@ -159,5 +163,21 @@ hello 入力と goodbye 入力の両方を認識して応答する、単純な�
 * 「質問がある場合の電話連絡先 (Who can I call if I have questions?)」と入力して、Enter キーを押します。#Business_Information_Contact_Us インテントが認識されたことが出力に示され、このインテント用に追加した応答が表示されます。
 * Watson は、入力内容が、提供されていたサンプルと完全に一致していなくても、インテントを認識できます。 対話ではインテントにより、使用される厳密な言葉遣いに関係なくユーザーの入力の目的を識別します。そして、指定された方法で応答します。
 
-### 対話の作成の結果
-これで完了です。 2 つのインテントとそれらを認識する対話からなる、単純な会話を作成しました。
+
+## WordPressにプラグインを使ってbot導入
+これを使うとコードを書く必要がありません。
+「Watson Assistant」を新規プラグインで導入。
+インストール後に有効化して設定。
+
+Username/Passwordを選択して「Username」、「Password」を入力します。この情報はサービスのページに表示される資格情報を使います。
+![ibm5](img/ibm5.png)
+
+Workspace URLは次のアドレスです。  
+[ここはWorkspace ID]部分はConversationのワークスペースのView detailsを選択すると表示されます。
+```
+https://gateway.watsonplatform.net/assistant/api/v1/workspaces/[ここはWorkspace ID]/message/
+```
+![ibm10](img/ibm10.png)
+
+入力を間違うと保存できません。
+設定がうまくいくとWordPressのページにbotが表示されるようになります。
